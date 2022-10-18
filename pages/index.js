@@ -11,9 +11,10 @@ import design from "../public/design.png";
 import consulting from "../public/consulting.png";
 import Image from "next/image";
 
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
+import web1 from "../public/web1.jpg";
+import web2 from "../public/web2.jpg";
+import web3 from "../public/web3.jpg";
+import Deneme from "./Deneme";
 
 
 export default function Home() {
@@ -58,6 +59,7 @@ export default function Home() {
                   onClick={onButtonClick}
                 >
                   Resume
+                 
                 </a>
               </li>
             </ul>
@@ -252,7 +254,9 @@ it was a project.</h3>
 
           </div>
         </section>
+       
       </main>
+      <Deneme/>
     </div>
   );
 }
