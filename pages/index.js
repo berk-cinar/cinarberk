@@ -61,6 +61,7 @@ export default function Home() {
                   Resume
                  
                 </a>
+
               </li>
             </ul>
           </nav>
