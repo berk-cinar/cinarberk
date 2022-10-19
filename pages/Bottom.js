@@ -4,40 +4,46 @@ import { HiLocationMarker } from 'react-icons/hi';
 import { AiFillMessage } from 'react-icons/ai'; 
 
 
-const Deneme = () => {
+const Bottom = () => {
   return (
         <div>
-        <div class="pt-12 text-center  lg:h-[50vh] bg-[#111827] mx-auto">
-            <h3 className='text-white px-6 text-lg md:text-2xl font-bold'>Got a project in mind ?</h3>
-            <h3 className='text-white px-6 text-5xl  md:text-8xl mt-4 font-bold lg:pb-8'> Lets Talk !</h3>
+        <div class="pt-12 text-center   bg-[#111827] mx-auto">
+            <h3 className='text-white px-6 text-5xl  md:text-2xl mt-4 font-bold '> Got a project in mind ?</h3>
+            <h3 className='text-white px-6 text-5xl  md:text-7xl mt-4 font-bold lg:pb-8'> Contact me</h3>
 
             <div className='grid grid-cols-1  content-center mt-10  lg:grid-cols-3 w-[80vw] mx-auto  text-white text-center gap-10'>
                 <div className='gap-2 mx-auto pt-18   w-[200px]  '> 
+                <div className=' text-center inline-flex items-center'>
                 <AiFillPhone className=' w-6 h-6'  /> 
-                <p class="font-bold text-white">Call me </p>
+                <p class="font-bold text-xl text-white">Call me </p>
+                </div>
                       <nav
                         class="mt-2 flex flex-col space-y-4 text-sm text-gray-100"
                       >
-                        <a  class="border-t  pt-6" href=""> +905073687173 </a>
+                        <a  class="border-t text-lg   pt-6"> +905073687173 </a>
                       </nav>
                 </div>
 
-
                 <div className='gap-2 mx-auto pt-18   w-[200px]  '> 
-                <AiFillPhone className=' w-6 h-6'  /> 
-                <p class="font-bold text-white">Location </p>
+
+                <div className=' text-center inline-flex items-center'>
+                < HiLocationMarker  className=' w-6 h-6'  /> 
+                <p class="font-bold text-xl text-white">Location </p>
+                </div>
 
                 <nav class=" mt-2 flex flex-col space-y-4 text-sm text-gray-100" >
-                  <a  class="border-t  pt-6" href=""> Ankara,Turkey</a>
+                  <a  class="border-t text-lg   pt-6" > Ankara,Turkey</a>
                 </nav>
 
                 </div>
                 <div className='gap-2 mx-auto pt-18   w-[200px]  '> 
-                <AiFillPhone className=' w-6 h-6'  /> 
-                <p class="font-bold text-white">Mail </p>
+                <div className=' text-center inline-flex items-center'>
+                <AiFillMessage className='mr-2 w-6 h-6'  /> 
+                <p class="font-bold text-xl text-white">Mail </p>
+                </div>
 
                       <nav class=" mt-2 flex flex-col space-y-4 text-sm text-gray-100">
-                        <a  class="border-t  pt-6 " href=""> berkcinr@gmail.com </a>
+                        <a  class="border-t text-lg  pt-6 "> berkcinr@gmail.com </a>
                       </nav>
                 </div>
             </div>
@@ -134,4 +140,4 @@ const Deneme = () => {
   )
 }
 
-export default Deneme
+export default Bottom;

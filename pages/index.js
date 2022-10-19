@@ -14,7 +14,7 @@ import Image from "next/image";
 import web1 from "../public/web1.jpg";
 import web2 from "../public/web2.jpg";
 import web3 from "../public/web3.jpg";
-import Deneme from "./Deneme";
+import Bottom from "./Bottom";
 
 
 export default function Home() {
@@ -257,7 +257,7 @@ it was a project.</h3>
         </section>
        
       </main>
-      <Deneme/>
+      <Bottom/>
     </div>
   );
 }
