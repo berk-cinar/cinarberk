@@ -11,9 +11,9 @@ import design from "../public/design.png";
 import consulting from "../public/consulting.png";
 import Image from "next/image";
 
-import web1 from "../public/web1.jpg";
-import web2 from "../public/web2.jpg";
-import web3 from "../public/web3.jpg";
+import web1 from "../public/web1.svg";
+import web2 from "../public/web2.svg";
+import web3 from "../public/web3.svg";
 import Bottom from "./Bottom";
 
 
@@ -48,7 +48,7 @@ export default function Home() {
             <ul className="flex justify-between items-center">
                             <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500  dark:bg-[#075985] text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500  dark:bg-[#075985] text-white px-4 py-2 border-none rounded-md ml-8"
                   href="#"
                   onClick={onButtonClick}
                 >
@@ -58,7 +58,7 @@ export default function Home() {
               <li>
                 <label  for="checked-toggle" class="inline-flex relative items-center cursor-pointer">
                   <input  onClick={() => setDarkMode(!darkMode)}  type="checkbox" value="" id="checked-toggle" class="sr-only peer"  />
-                  <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                  <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-gradient-to-r from-cyan-500 text- to-teal-500"></div>
                   <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">
                   <BsFillMoonStarsFill
                 
@@ -116,9 +116,8 @@ export default function Home() {
             </div>
           </div>
           <div className="lg:flex gap-10 dark:text-white">
-
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-[#075985] flex-1">
-              <Image src={code} width={100} height={100} />
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-[#072a3e] flex-1">
+              <Image src={code} width={80} height={80} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
               Languages and <br></br> Frameworks
               </h3>
@@ -131,8 +130,8 @@ export default function Home() {
                 <div className="text-gray-800 dark:text-white py-1">Redux</div>
             </div>
 
-            <div className="text-center dark:text-white shadow-lg p-10 rounded-xl my-10 dark:bg-[#075985] flex-1">
-              <Image src={consulting} width={100} height={100} />
+            <div className="text-center dark:text-white shadow-lg p-10 rounded-xl my-10 dark:bg-[#072a3e] flex-1">
+              <Image src={consulting} width={80} height={80} />
               <h3 className="text-lg font-medium pt-8 pb-2 lg:pb-8 ">UI Libraries</h3>
               <div className="py-2">
                 Im using last technology UI libraries for the project
@@ -142,8 +141,8 @@ export default function Home() {
               <div className="text-gray-800 dark:text-white py-1">TailwindCSS</div>
               <div className="text-gray-800 dark:text-white py-1">Metarial Design</div>
             </div>
-            <div className=" dark:text-white text-center shadow-lg p-10 rounded-xl my-10  dark:bg-[#075985] flex-1">
-              <Image src={design} width={100} height={100} />
+            <div className=" dark:text-white text-center shadow-lg p-10 rounded-xl my-10  dark:bg-[#072a3e] flex-1">
+              <Image src={design} width={80} height={80} />
               <h3 className="text-lg dark:text-white font-medium pt-8 pb-2 lg:pb-8 ">
               Design Tools
               </h3>
@@ -165,9 +164,12 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white  ">Portfolio</h3>
 
             </div>
+
+
           </div>
           <div className="dark:text-white gap-10 py-6 grid grid-cols-1 lg:grid-cols-2">
-            <div >
+
+            <div className="flex-1" >
             <h3 className="text-lg font-bold lg:min-h-[60px] xl:min-h-[60px] 2xl:min-h-[40px]">1. Online food ordering platform</h3>
 
             <h3 className="min-h-[120px]  lg:min-h-[200px]  xl:min-h-[180px] 2xl:min-h-[140px]" > I used the ReactJS framework for my online food ordering app Tasty Treat. state management
@@ -188,9 +190,9 @@ I aimed for a more functional use and space management by turning into a hamburg
                </div>
               </h4> <br></br>
               <Image
-                className="rounded-lg object-cover"
+                className="rounded-lg bg-[#e2f4ff] dark:bg-[#072a3e] object-cover"
                 width={"100%"}
-                height={"88%"}
+                height={"82%"}
                 layout="responsive"
                 src={web1}
               />
@@ -206,19 +208,22 @@ I aimed for a more functional use and space management by turning into a hamburg
             <div className="flex-1 ">
             <h3 className="text-lg font-bold lg:min-h-[60px] xl:min-h-[60px] 2xl:min-h-[40px]">2. Responsive web page to create pop-up</h3>
               <h4 >
-                  <div className="min-h-[120px]  lg:min-h-[200px] xl:min-h-[180px] 2xl:min-h-[140px]">While creating my JavaScript project, which I created with the idea of ​​creating
+                  <div className="min-h-[120px]  lg:min-h-[200px]  xl:min-h-[180px] 2xl:min-h-[140px]">While creating my JavaScript project, which I created with the idea of ​​creating
                      your own popup, I used the ReactJS framework and I used TypeScript. I didnt need a 
                      library for the UI part, I used Tailwind SCSS. It was also sufficient for the mobile view of my app. I used React Hooks and Redux for state management.
-                    I have stored the users information in the popup component in LocalStorage. </div> <br></br>
-              <span className="text-lg py-6 font-bold ">Used technologies:</span> TypeScript, React, Redux, Rest Api, Axios, LocalStorage, React Hooks
-<br></br>
-<span className="text-lg py-2 font-bold ">UI:</span>  CSS, SCSS, Tailwind
+                    I have stored the users information in the popup component in LocalStorage. </div>
+                     <br></br>
+                     <div className="min-h-[80px]">
+              <span className="text-lg py-6 font-bold ">Used technologies:</span>
+              TypeScript, Redux, Rest Api, Axios, LocalStorage, React Hooks  <br></br> 
+<span className="text-lg  font-bold ">UI:</span>  CSS, SCSS, Tailwind
+                     </div>
               </h4>
               <br></br>
               <Image
-                className="rounded-lg object-cover"
+                className="rounded-lg bg-[#e2f4ff] dark:bg-[#072a3e] object-cover"
                 width={"100%"}
-                height={"90%"}
+                height={"82%"}
                 layout="responsive"
                 src={web2}
               />
@@ -232,6 +237,10 @@ I aimed for a more functional use and space management by turning into a hamburg
               </div>
               
             </div>
+
+
+
+
             <div className="flex-1">
             <h3 className="text-lg font-bold lg:min-h-[60px] xl:min-h-[80px] 2xl:min-h-[40px]">3. Online shopping platform</h3>
             <h3 className=" min-h-[120px] lg:min-h-[150px] xl:min-h-[180px] 2xl:min-h-[140px]">While writing Online Shopping Platform, Azco, I used ReactJS framework and JavaScript language. A new UI
@@ -239,14 +248,14 @@ I wanted to try the library, I preferred React-Bootstrap. It was my first encoun
 definitions, dynamically changing image sizes with hovers, etc.
 it was a project.</h3>
               <h4 >
-              <span className="text-lg h- py-6 font-bold ">Used technologies:</span> JavaScript, React, Redux
+              <span className="text-lg py-6 font-bold ">Used technologies:</span> JavaScript, React, Redux
 <br></br>
-<span className="text-lg py-2 font-bold ">UI:</span> React-bootstrap, CSS, SCSS
+<span className="text-lg  font-bold ">UI:</span> React-bootstrap, CSS, SCSS
               </h4> <br></br>
               <Image
-                className="rounded-lg object-cover"
+                className="rounded-lg bg-[#e2f4ff] dark:bg-[#072a3e] object-cover"
                 width={"100%"}
-                height={"90%"}
+                height={"82%"}
                 layout="responsive"
                 src={web3}
               />
