@@ -44,35 +44,40 @@ export default function Home() {
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-[85vh]">
-          <nav className="py-10 mb-12 flex float-right dark:text-white">
-            <ul className="flex items-center">
-              <li>
-                <BsFillMoonStarsFill
-                  onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
-                />
-              </li>
-              <li>
+          <nav className="py-4 mt-2  dark:text-white">
+            <ul className="flex justify-between items-center">
+                            <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500  dark:bg-[#075985] text-white px-4 py-2 border-none rounded-md ml-8"
                   href="#"
                   onClick={onButtonClick}
                 >
                   Resume
-                 
                 </a>
-
               </li>
+              <li>
+                <label  for="checked-toggle" class="inline-flex relative items-center cursor-pointer">
+                  <input  onClick={() => setDarkMode(!darkMode)}  type="checkbox" value="" id="checked-toggle" class="sr-only peer"  />
+                  <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                  <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">
+                  <BsFillMoonStarsFill
+                
+                  className=" cursor-pointer text-2xl"
+                />
+                  </span>
+                </label>
+              </li>
+
             </ul>
           </nav>
           <div className="text-center p-10 py-10">
-            <h2 className="text-5xl py-2 pt-32 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+            <h2 className="text-5xl pt-4 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
               Berk Çınar
             </h2>
             <h3 className="text-2xl py-6 dark:text-white md:text-3xl">
               Developer and designer.
             </h3>
-            <div lassName="text-md pt-4 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
+            <div className="text-md pt-4 leading-8 text-gray-800 dark:text-white max-w-xl mx-auto md:text-xl">
               Freelancer providing services for programming and design content
               needs. Join me down below and lets get cracking!
             </div>
@@ -110,47 +115,49 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+          <div className="lg:flex gap-10 dark:text-white">
+
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-[#075985] flex-1">
+              <Image src={code} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2 ">
+              Languages and <br></br> Frameworks
+              </h3>
+              <div className="py-2 ">
+                Im using different languages and tools with best fit to project.
+              </div>
+                <div className="text-gray-800  dark:text-white py-1">JavaScript</div>
+                <div className="text-gray-800 dark:text-white py-1">React</div>
+                <div className="text-gray-800 dark:text-white py-1">NextJs</div>
+                <div className="text-gray-800 dark:text-white py-1">Redux</div>
+            </div>
+
+            <div className="text-center dark:text-white shadow-lg p-10 rounded-xl my-10 dark:bg-[#075985] flex-1">
+              <Image src={consulting} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2 lg:pb-8 ">UI Libraries</h3>
+              <div className="py-2">
+                Im using last technology UI libraries for the project
+              </div>
+              <div className="text-gray-800 dark:text-white py-1">BootStrap</div>
+              <div className="text-gray-800 dark:text-white py-1">ReactStrap</div>
+              <div className="text-gray-800 dark:text-white py-1">TailwindCSS</div>
+              <div className="text-gray-800 dark:text-white py-1">Metarial Design</div>
+            </div>
+            <div className=" dark:text-white text-center shadow-lg p-10 rounded-xl my-10  dark:bg-[#075985] flex-1">
               <Image src={design} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-8  ">
+              <h3 className="text-lg dark:text-white font-medium pt-8 pb-2 lg:pb-8 ">
               Design Tools
               </h3>
-              <div className="py-2">
+              <div className="py-2 ">
                 Creating elegant designs suited for the project needs following core
                 design theory.
               </div>
 
-              <div className="text-gray-800 py-1">Photoshop</div>
-              <div className="text-gray-800 py-1">Illustrator</div>
-              <div  className="text-gray-800 py-1">Figma</div>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
-              Languages and Frameworks
-              </h3>
-              <div className="py-2">
-                Im using different languages and tools with best fit to project.
-              </div>
-                <div className="text-gray-800 py-1">JavaScript</div>
-                <div className="text-gray-800 py-1">React</div>
-                <div className="text-gray-800 py-1">NextJs</div>
-                <div className="text-gray-800 py-1">Redux</div>
-            </div>
-
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-8 ">UI Libraries</h3>
-              <div className="py-2">
-                Im using last technology UI libraries for the project
-              </div>
-              <div className="text-gray-800 py-1">BootStrap</div>
-              <div className="text-gray-800 py-1">ReactStrap</div>
-              <div className="text-gray-800 py-1">TailwindCSS</div>
-              <div className="text-gray-800 py-1">Metarial Design</div>
+              <div className="text-gray-800 dark:text-white py-1">Photoshop</div>
+              <div className="text-gray-800 dark:text-white py-1">Illustrator</div>
+              <div  className="text-gray-800  dark:text-white py-1">Figma</div>
             </div>
           </div>
+          
         </section>
         <section className="py-10">
           <div>
@@ -159,11 +166,11 @@ export default function Home() {
 
             </div>
           </div>
-          <div className=" gap-10 py-6 grid grid-cols-1 lg:grid-cols-2">
+          <div className="dark:text-white gap-10 py-6 grid grid-cols-1 lg:grid-cols-2">
             <div >
             <h3 className="text-lg font-bold lg:min-h-[60px] xl:min-h-[60px] 2xl:min-h-[40px]">1. Online food ordering platform</h3>
 
-            <h3 className="min-h-[120px]  lg:min-h-[200px] xl:min-h-[180px] 2xl:min-h-[140px]" > I used the ReactJS framework for my online food ordering app Tasty Treat. state management
+            <h3 className="min-h-[120px]  lg:min-h-[200px]  xl:min-h-[180px] 2xl:min-h-[140px]" > I used the ReactJS framework for my online food ordering app Tasty Treat. state management
 I used React Hooks and Redux for In the UI part, I took advantage of ReactStrap and React Slick. ReactStrapin
 I created a responsive design view with the grid structure. Header in responsive design opens from the right
 I aimed for a more functional use and space management by turning into a hamburger menu.</h3>

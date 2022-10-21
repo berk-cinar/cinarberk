@@ -7,53 +7,53 @@ import { AiFillMessage } from 'react-icons/ai';
 const Bottom = () => {
   return (
         <div>
-        <div class="pt-12 text-center   bg-[#111827] mx-auto">
-            <h3 className='text-white px-6 text-5xl  md:text-2xl mt-4 font-bold '> Got a project in mind ?</h3>
-            <h3 className='text-white px-6 text-5xl  md:text-7xl mt-4 font-bold lg:pb-8'> Contact me</h3>
+        <div class="pt-4 text-center   bg-[#111827] mx-auto">
+            <h3 className='text-white px-6 text-lg  md:text-2xl font-bold '> Got a project in mind ?</h3>
+            <h3 className='text-white px-6 text-3xl  md:text-7xl lg:mb-12  font-bold pb-4'> Contact me</h3>
 
-            <div className='grid grid-cols-1  content-center mt-10  lg:grid-cols-3 w-[80vw] mx-auto  text-white text-center gap-10'>
+            <div className='grid grid-cols-1  content-center   lg:grid-cols-3 w-[80vw] mx-auto  text-white text-center gap-10'>
                 <div className='gap-2 mx-auto pt-18   w-[200px]  '> 
                 <div className=' text-center inline-flex items-center'>
                 <AiFillPhone className=' w-6 h-6'  /> 
-                <p class="font-bold text-xl text-white">Call me </p>
+                <p class="font-bold text-lg text-white">Call me </p>
                 </div>
                       <nav
-                        class="mt-2 flex flex-col space-y-4 text-sm text-gray-100"
+                        class="mt-1 flex flex-col text-sm text-gray-100"
                       >
-                        <a  class="border-t text-lg   pt-6"> +905073687173 </a>
+                        <a  class="border-t text-md lg:text-lg pt-1"> +905073687173 </a>
                       </nav>
                 </div>
 
-                <div className='gap-2 mx-auto pt-18   w-[200px]  '> 
+                <div className='gap-2 mx-auto   w-[200px]  '> 
 
                 <div className=' text-center inline-flex items-center'>
                 < HiLocationMarker  className=' w-6 h-6'  /> 
-                <p class="font-bold text-xl text-white">Location </p>
+                <p class="font-bold text-lg text-white">Location </p>
                 </div>
 
-                <nav class=" mt-2 flex flex-col space-y-4 text-sm text-gray-100" >
-                  <a  class="border-t text-lg   pt-6" > Ankara,Turkey</a>
+                <nav class=" mt-1 flex flex-col  text-sm text-gray-100" >
+                  <a  class="border-t text-md   pt-1" > Ankara,Turkey</a>
                 </nav>
 
                 </div>
                 <div className='gap-2 mx-auto pt-18   w-[200px]  '> 
                 <div className=' text-center inline-flex items-center'>
                 <AiFillMessage className='mr-2 w-6 h-6'  /> 
-                <p class="font-bold text-xl text-white">Mail </p>
+                <p class="font-bold text-md text-white">Mail </p>
                 </div>
 
-                      <nav class=" mt-2 flex flex-col space-y-4 text-sm text-gray-100">
-                        <a  class="border-t text-lg  pt-6 "> berkcinr@gmail.com </a>
+                      <nav class=" mt-1 flex flex-col  text-sm text-gray-100">
+                        <a  class="border-t text-mg  pt-1 "> berkcinr@gmail.com </a>
                       </nav>
                 </div>
             </div>
         </div>
 
 <footer aria-label="Site Footer" class="bg-gray-900">
-  <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-screen-xl px-4 py-2 sm:px-6 lg:px-8">
     <div class="lg:flex lg:gap-8">
       <div
-        class="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16"
+        class="mt-2 grid grid-cols-2 gap-2 lg:mt-0 lg:grid-cols-5 lg:gap-y-16"
       >
         <div class="col-span-2 lg:col-span-3 lg:flex lg:items-end">
           <form class="w-full text-white">
@@ -117,14 +117,14 @@ const Bottom = () => {
       </div>
     </div>
 
-    <div class="mt-12 border-t border-white/10 pt-8">
-      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+    <div class="mt-4 border-t border-white/10 pt-2">
+      <div class="grid grid-cols-1 gap-2 lg:grid-cols-2">
         <p class="text-center text-xs text-gray-400 lg:text-left">
           Copyright &copy; 2022. Berk Çınar. All rights reserved.
         </p>
 
         <nav
-          class="flex justify-center gap-4 text-xs text-gray-400 lg:justify-end"
+          class="flex justify-center gap-x-4 text-xs text-gray-400 lg:justify-end"
         >
           <a> Terms & Conditions </a>
           <a> Privacy Policy </a>
